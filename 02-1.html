@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Sample</title>
+</head>
+<body>
+  <div id="app">  <!-- view 인스턴스가 그려질 지점 -->
+    {{ message }} <!-- 데이터 속성에서 정의된 message 값이 연결됨 -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    // 인스턴스 start
+      new Vue({
+        el: '#app',                 //el속성      : view 인스턴스가 그려질 지점 지정 ; app이라는 id를 가진 요소
+        data : {                    //데이터 속성  : message 값 정의 했음
+          message : 'Hello Vue.js!'
+        }
+        //template: ,                // 화면에 표시할 HTML, CSS 등의 마크업 요소를 정의하는 속성
+        //methods : ,                // 화면 로직제어 관련 속성
+        //created :                  // 뷰 인스턴스 생성되자마자 실행할 로직을 정의할 수 있는 속성
+      });
+    // 인스턴스 end
+  </script>
+</body>
+</html>
