@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue v-bind example</title>
+</head>
+<body>
+<div id="app">
+  <p v-bind:id="idA">아이디 바인딩</p>        <!-- v-bind:는 :로 간소화 할 수 있다. -->
+  <p v-bind:class="classA">클래스 바인딩</p>  <!-- ex) :class="classA" -->
+  <p v-bind:style="styleA">스타일 바인딩</p>  <!-- ex) :style="styleA" -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data : {
+      idA: 10,
+      classA: 'container',
+      styleA: 'color: blue'
+    }
+  });
+</script>
+</body>
+</html>
