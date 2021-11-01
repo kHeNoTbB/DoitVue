@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/kHeNoTbB/DoitVue/issues"
   },
-  "homepage": "https://github.com/kHeNoTbB/DoitVue#readme"
+  "homepage": "https://github.com/kHeNoTbB/DoitVue#readme",
+  "dependencies": {
+    "global": "^4.4.0",
+    "vue-cli": "^2.9.6"
+  }
 }
